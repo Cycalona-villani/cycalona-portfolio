@@ -153,6 +153,14 @@ function App() {
               <small>
                 Results verified in Jenkins · JUnit reports
               </small>
+              <a
+  className="test-evidence-link"
+  href={`${import.meta.env.BASE_URL}images/cypress-tests.png`}
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  View Cypress Test Results ↗
+</a>
             </aside>
           </article>
         </section>
