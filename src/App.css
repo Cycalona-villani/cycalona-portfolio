@@ -1,0 +1,461 @@
+
+/* =========================================
+   CYCALONA VILLANI — PORTFOLIO
+   Warm White · Navy · Teal
+========================================= */
+
+/* MAIN LAYOUT */
+
+#root {
+  width: 100%;
+}
+
+.site-header,
+main,
+.site-footer {
+  width: min(1120px, calc(100% - 64px));
+  margin-inline: auto;
+}
+
+/* HEADER & NAVIGATION */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-block: 28px;
+  border-bottom: 1px solid #dedfd9;
+}
+
+.brand {
+  font-size: 21px;
+  font-weight: 750;
+  letter-spacing: -0.8px;
+  text-decoration: none;
+}
+
+.brand span {
+  color: #087f75;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #52616a;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+nav a:hover,
+.text-link:hover {
+  color: #087f75;
+}
+
+/* HERO SECTION */
+
+.hero {
+  padding: 110px 0 96px;
+}
+
+.eyebrow {
+  margin: 0 0 24px;
+  color: #087267;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.045em;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(46px, 6.6vw, 80px);
+  font-weight: 650;
+  line-height: 1.08;
+}
+
+h1 span {
+  color: #087f75;
+}
+
+.hero-description {
+  max-width: 590px;
+  margin: 30px 0;
+  color: #52616a;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+/* BUTTONS AND LINKS */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 23px;
+  border-radius: 6px;
+  background: #08776e;
+  color: white;
+  font-size: 14px;
+  font-weight: 650;
+  text-decoration: none;
+  transition: background 150ms ease;
+}
+
+.button:hover {
+  background: #065c55;
+  color: white;
+}
+
+.text-link {
+  color: #172f3c;
+  font-size: 14px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.availability {
+  margin-top: 36px;
+  color: #64716f;
+  font-size: 12px;
+}
+
+/* SHARED SECTIONS */
+
+.section {
+  padding-block: 66px;
+  border-top: 1px solid #dedfd9;
+}
+
+.section > .eyebrow {
+  margin-bottom: 14px;
+}
+
+h2 {
+  margin: 0 0 38px;
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* FEATURED PROJECT */
+
+.featured-project {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  overflow: hidden;
+  border: 1px solid #dce1da;
+  border-radius: 12px;
+  background: white;
+}
+
+.project-copy {
+  padding: 44px;
+  min-width: 0;
+}
+
+.project-copy .eyebrow {
+  font-size: 10px;
+  letter-spacing: 1.4px;
+}
+
+h3 {
+  margin: 0 0 18px;
+  font-size: 31px;
+  font-weight: 650;
+  line-height: 1.2;
+}
+
+.project-copy > p:not(.eyebrow),
+.about-section p:not(.eyebrow) {
+  color: #52616a;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+/* PROJECT HIGHLIGHTS */
+
+.project-highlights {
+  margin: 24px 0;
+  padding-left: 18px;
+  color: #43575f;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.project-highlights li {
+  margin-bottom: 8px;
+}
+
+/* TECHNOLOGY BADGES */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.tags span {
+  padding: 6px 10px;
+  border: 1px solid #dbe6df;
+  border-radius: 4px;
+  color: #326358;
+  background: #f4f8f5;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* PROJECT DEMO & GITHUB LINKS */
+
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  text-decoration: none;
+}
+
+.project-links .text-link:hover {
+  color: #087f75;
+}
+
+/* CYPRESS & JENKINS PROOF PANEL */
+
+.project-proof {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 44px;
+  background: #eaf2ed;
+}
+
+.proof-label {
+  color: #436a5f;
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 1.8px;
+}
+
+.project-proof strong {
+  display: block;
+  margin-top: 28px;
+  color: #126c59;
+  font-size: 76px;
+  font-weight: 550;
+  letter-spacing: -5px;
+  line-height: 1;
+}
+
+.project-proof strong span {
+  color: #6c8b7f;
+  font-size: 36px;
+  letter-spacing: -2px;
+}
+
+.project-proof > p {
+  margin: 14px 0 28px;
+  color: #355c50;
+  font-size: 15px;
+}
+
+.project-proof ul {
+  margin: 0;
+  padding: 22px 0;
+  border-top: 1px solid #cbded1;
+  border-bottom: 1px solid #cbded1;
+  color: #355c50;
+  list-style: none;
+  font-size: 13px;
+  line-height: 2.3;
+}
+
+.project-proof small {
+  margin-top: 22px;
+  color: #506e61;
+  font-size: 11px;
+}
+
+/* ABOUT SECTION */
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+
+.about-section h2 {
+  font-size: 36px;
+}
+
+.about-section p:first-child {
+  margin-top: 0;
+}
+
+/* SKILLS */
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  padding: 12px 18px;
+  border: 1px solid #dce1da;
+  border-radius: 6px;
+  background: white;
+  color: #43575f;
+  font-size: 14px;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  margin: 24px 0 72px;
+  padding: 60px 32px;
+  border-radius: 12px;
+  background: #172f3c;
+  color: #faf9f6;
+}
+
+.contact-section h2 {
+  margin-bottom: 16px;
+}
+
+.contact-section > p:not(.eyebrow) {
+  margin-bottom: 28px;
+  color: #d6e1e1;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.contact-section .eyebrow {
+  color: #83d5c4;
+}
+
+/* FOOTER */
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px 0 42px;
+  border-top: 1px solid #dedfd9;
+  color: #64716f;
+  font-size: 12px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .site-header,
+  main,
+  .site-footer {
+    width: calc(100% - 36px);
+  }
+
+  .site-header {
+    flex-wrap: wrap;
+    padding-block: 22px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .hero {
+    padding: 72px 0;
+  }
+
+  .hero-description {
+    font-size: 17px;
+  }
+
+  .section {
+    padding-block: 48px;
+  }
+
+  .featured-project,
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .project-copy,
+  .project-proof {
+    padding: 28px;
+  }
+
+  .project-proof strong {
+    font-size: 64px;
+  }
+
+  .about-section {
+    gap: 24px;
+  }
+
+  .about-section h2 {
+    font-size: 30px;
+  }
+
+  .contact-section {
+    padding: 36px 24px;
+  }
+
+  .site-footer {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header,
+  main,
+  .site-footer {
+    width: calc(100% - 28px);
+  }
+
+  h1 {
+    font-size: clamp(38px, 10vw, 48px);
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  .project-copy,
+  .project-proof {
+    padding: 22px;
+  }
+
+  .project-links {
+    gap: 16px;
+  }
+
+  .hero-actions {
+    gap: 20px;
+  }
+}
