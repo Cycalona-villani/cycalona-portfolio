@@ -184,7 +184,37 @@ function App() {
             </aside>
           </article>
         </section>
+<section className="section">
+  <p className="eyebrow">PORTFOLIO QUALITY CHECKS</p>
+  <h2>This portfolio is tested, too.</h2>
 
+  <p>
+    Four Cypress tests cover the homepage, project navigation,
+    project links, and the contact link at a phone-sized viewport.
+    Jenkins builds the portfolio, runs the tests, and publishes
+    JUnit reports.
+  </p>
+
+  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
+    <a
+      className="text-link"
+      href={`${import.meta.env.BASE_URL}images/portfolio-cypress-tests.png`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View Portfolio Cypress Results ↗
+    </a>
+
+    <a
+      className="text-link"
+      href={`${import.meta.env.BASE_URL}images/portfolio-jenkins-tests.png`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View Portfolio Jenkins Results ↗
+    </a>
+  </div>
+</section>
         {/* ABOUT SECTION */}
         <section id="about" className="section about-section">
           <div>
