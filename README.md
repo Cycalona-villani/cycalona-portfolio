@@ -1,75 +1,136 @@
-# React + TypeScript + Vite
+# Cycalona Villani | Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio, built with React, TypeScript, and Vite.
+It showcases my software development work, testing experience,
+and technical delivery skills.
 
-Currently, two official plugins are available:
+**[View Live Portfolio](https://cycalona-villani.github.io/cycalona-portfolio/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Featured Provider Verification System project
+- Links to live demos and source code
+- Skills and professional background
+- PDF résumé
+- Cypress and Jenkins testing evidence
+- Email contact link
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technology
 
-## Expanding the ESLint configuration
+- React
+- TypeScript
+- Vite
+- CSS
+- Cypress
+- Jenkins
+- JUnit test reporting
+- GitHub Pages hosting
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Featured Project: Provider Verification System
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+A React and TypeScript application demonstrating provider
+verification and approval safeguards.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Features include:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Approval blocked until verification requirements are met
+- Manual identity review
+- Expired license blocking
+- Recovery from simulated service outages
+- Cypress tests and Jenkins test reporting
 
+[Live Demo](https://cycalona-villani.github.io/provider-verification-system/)
+
+[Source Code](https://github.com/Cycalona-villani/provider-verification-system)
+
+## Portfolio Testing
+
+The portfolio has its own Cypress test suite, separate from
+the Provider Verification System tests.
+
+Four automated tests check:
+
+1. Homepage heading and branding
+2. Navigation to the projects section
+3. Demo and source code link addresses
+4. Contact navigation and email link at a phone-sized viewport
+
+The phone-sized test checks the contact workflow; it does
+not represent full mobile device or browser coverage.
+
+## Jenkins Pipeline
+
+The Jenkins pipeline is defined in `Jenkinsfile` and:
+
+1. Installs dependencies with `npm ci`
+2. Builds the portfolio with `npm run build`
+3. Starts a local server and runs Cypress tests
+4. Publishes JUnit XML test reports
+
+The pipeline validates the project. GitHub Pages deployment
+is managed separately.
+
+## Run Locally
+
+Install dependencies:
+
+```bash
+npm ci
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Start the development server:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm run dev
 ```
+
+Open the Local URL printed in the terminal.
+
+## Run Tests
+
+Start a temporary server and run Cypress automatically:
+
+```bash
+npm run test:e2e
+```
+
+This command uses port 5180 and stops the server after testing.
+
+To use the interactive Cypress runner:
+
+```bash
+npm run dev -- --port 5176 --strictPort
+```
+
+In a second terminal:
+
+```bash
+npm run cy:open
+```
+
+The interactive configuration expects the app on port 5176.
+Select E2E Testing, choose a browser, and open `portfolio.cy.ts`.
+
+JUnit XML reports are written to `test-results/`.
+
+## Build
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Contact
+
+**Cycalona Villani**
+
+[Portfolio](https://cycalona-villani.github.io/cycalona-portfolio/)
+
+[GitHub](https://github.com/Cycalona-villani)
+
+[Email](mailto:clonievillani@gmail.com)
