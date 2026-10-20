@@ -1,4 +1,3 @@
-
 import './App.css'
 
 const skills = [
@@ -53,6 +52,7 @@ function App() {
             <a className="button" href="#projects">
               Explore my work ↗
             </a>
+
             <a className="text-link" href="#contact">
               Let’s connect →
             </a>
@@ -69,7 +69,7 @@ function App() {
           <h2>Built with purpose.</h2>
 
           <article className="featured-project">
-            {/* LEFT SIDE */}
+            {/* PROJECT DESCRIPTION */}
             <div className="project-copy">
               <p className="eyebrow">
                 FEATURED PROJECT · TRUST & SAFETY
@@ -90,10 +90,12 @@ function App() {
                   Expired licenses remain blocked after
                   identity review.
                 </li>
+
                 <li>
                   Three Cypress tests verify key approval
                   workflows.
                 </li>
+
                 <li>
                   Jenkins builds, tests, and publishes
                   JUnit test reports.
@@ -107,7 +109,6 @@ function App() {
                 <span>Jenkins</span>
               </div>
 
-              {/* PROJECT LINKS — INSIDE PROJECT COPY */}
               <div className="project-links">
                 <a
                   className="button"
@@ -129,7 +130,7 @@ function App() {
               </div>
             </div>
 
-            {/* RIGHT SIDE — TEST RESULTS */}
+            {/* TEST RESULTS AND SCREENSHOT LINKS */}
             <aside
               className="project-proof"
               aria-label="Verified test results"
@@ -153,14 +154,33 @@ function App() {
               <small>
                 Results verified in Jenkins · JUnit reports
               </small>
-              <a
-  className="test-evidence-link"
-  href={`${import.meta.env.BASE_URL}images/cypress-tests.png`}
-  target="_blank"
-  rel="noopener noreferrer"
->
-  View Cypress Test Results ↗
-</a>
+
+              <div
+                className="test-evidence-links"
+                style={{
+                  display: 'grid',
+                  gap: '12px',
+                  marginTop: '16px',
+                }}
+              >
+                <a
+                  className="test-evidence-link"
+                  href={`${import.meta.env.BASE_URL}images/cypress-tests.png`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Cypress Test Results ↗
+                </a>
+
+                <a
+                  className="test-evidence-link"
+                  href={`${import.meta.env.BASE_URL}images/jenkins-tests.png`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Jenkins Test Results ↗
+                </a>
+              </div>
             </aside>
           </article>
         </section>
@@ -199,7 +219,6 @@ function App() {
         {/* SKILLS SECTION */}
         <section className="section">
           <p className="eyebrow">MY TOOLKIT</p>
-
           <h2>Skills I put to work.</h2>
 
           <ul className="skills-list">
@@ -212,7 +231,6 @@ function App() {
         {/* CONTACT SECTION */}
         <section id="contact" className="contact-section">
           <p className="eyebrow">LET’S CONNECT</p>
-
           <h2>Have something worth building?</h2>
 
           <p>
