@@ -183,6 +183,103 @@ function App() {
               </div>
             </aside>
           </article>
+          <article
+  className="featured-project"
+  style={{ marginTop: '32px' }}
+>
+  <div className="project-copy">
+    <p className="eyebrow">
+      QA · TEST MANAGEMENT
+    </p>
+
+    <h3>QA Test Dashboard</h3>
+
+    <p>
+      A React and TypeScript application for creating test
+      cases, recording manual test results, and tracking
+      defects from discovery through closure.
+    </p>
+
+    <ul className="project-highlights">
+      <li>
+        Test cases include execution steps, expected results,
+        and priority.
+      </li>
+      <li>
+        Defects link to test cases and track severity
+        and resolution status.
+      </li>
+      <li>
+        Dashboard counts update as test results and
+        defect statuses change.
+      </li>
+    </ul>
+
+    <div className="tags">
+      <span>React</span>
+      <span>TypeScript</span>
+      <span>Cypress</span>
+      <span>GitHub Actions</span>
+    </div>
+
+    <div className="project-links">
+      <a
+        className="button"
+        href="https://cycalona-villani.github.io/qa-test-dashboard/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Live Demo ↗
+      </a>
+
+      <a
+        className="text-link"
+        href="https://github.com/Cycalona-villani/qa-test-dashboard"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View GitHub →
+      </a>
+    </div>
+  </div>
+
+  <aside
+    className="project-proof"
+    aria-label="QA dashboard automated test results"
+  >
+    <span className="proof-label">
+      TESTED WORKFLOWS
+    </span>
+
+    <strong>
+      03<span> / 03</span>
+    </strong>
+
+    <p>Cypress tests passing</p>
+
+    <ul>
+      <li>✓ Test creation and persistence</li>
+      <li>✓ Defect linking and closure</li>
+      <li>✓ Test results and dashboard counts</li>
+    </ul>
+
+    <small>
+      GitHub Actions runs tests before deployment.
+      Demo data is saved in your browser.
+    </small>
+
+    <div style={{ marginTop: '16px' }}>
+      <a
+        className="test-evidence-link"
+        href="https://github.com/Cycalona-villani/qa-test-dashboard/actions"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        View Automated Test Runs ↗
+      </a>
+    </div>
+  </aside>
+</article>
         </section>
 <section className="section">
   <p className="eyebrow">PORTFOLIO QUALITY CHECKS</p>
