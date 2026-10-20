@@ -257,7 +257,25 @@ function App() {
             ))}
           </ul>
         </section>
+      {/* RESUME SECTION */}
+      <section id="resume" className="section">
+        <p className="eyebrow">MY EXPERIENCE</p>
+        <h2>View my résumé.</h2>
 
+        <p>
+          Explore my experience in software development,
+          testing, and technical delivery.
+        </p>
+
+        <a
+          className="button"
+          href={`${import.meta.env.BASE_URL}resume/Cycalona_Villani_Resume.pdf`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Résumé ↗
+        </a>
+</section>
         {/* CONTACT SECTION */}
         <section id="contact" className="contact-section">
           <p className="eyebrow">LET’S CONNECT</p>
