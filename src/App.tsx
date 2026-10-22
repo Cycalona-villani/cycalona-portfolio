@@ -92,8 +92,8 @@ function App() {
                 </li>
 
                 <li>
-                  Three Cypress tests verify key approval
-                  workflows.
+                  Eight Cypress tests cover approval workflows,
+                  frontend API handling, and direct API responses.
                 </li>
 
                 <li>
@@ -140,19 +140,20 @@ function App() {
               </span>
 
               <strong>
-                03<span> / 03</span>
+                08<span> / 08</span>
               </strong>
 
               <p>Cypress tests passing</p>
 
               <ul>
-                <li>✓ Approval safeguards</li>
-                <li>✓ Expired license blocking</li>
-                <li>✓ Outage recovery</li>
+                <li>✓ 3 provider verification tests</li>
+                <li>✓ 2 frontend API tests</li>
+                <li>✓ 3 direct API tests</li>
               </ul>
 
               <small>
-                Results verified in Jenkins · JUnit reports
+                All 8 tests passed locally. Earlier Jenkins reports
+                cover the original 3 verification tests.
               </small>
 
               <div
@@ -184,134 +185,134 @@ function App() {
             </aside>
           </article>
           <article
-  className="featured-project"
-  style={{ marginTop: '32px' }}
->
-  <div className="project-copy">
-    <p className="eyebrow">
-      QA · TEST MANAGEMENT
-    </p>
+            className="featured-project"
+            style={{ marginTop: '32px' }}
+          >
+            <div className="project-copy">
+              <p className="eyebrow">
+                QA · TEST MANAGEMENT
+              </p>
 
-    <h3>QA Test Dashboard</h3>
+              <h3>QA Test Dashboard</h3>
 
-    <p>
-      A React and TypeScript application for creating test
-      cases, recording manual test results, and tracking
-      defects from discovery through closure.
-    </p>
+              <p>
+                A React and TypeScript application for creating test
+                cases, recording manual test results, and tracking
+                defects from discovery through closure.
+              </p>
 
-    <ul className="project-highlights">
-      <li>
-        Test cases include execution steps, expected results,
-        and priority.
-      </li>
-      <li>
-        Defects link to test cases and track severity
-        and resolution status.
-      </li>
-      <li>
-        Dashboard counts update as test results and
-        defect statuses change.
-      </li>
-    </ul>
+              <ul className="project-highlights">
+                <li>
+                  Test cases include execution steps, expected results,
+                  and priority.
+                </li>
+                <li>
+                  Defects link to test cases and track severity
+                  and resolution status.
+                </li>
+                <li>
+                  Dashboard counts update as test results and
+                  defect statuses change.
+                </li>
+              </ul>
 
-    <div className="tags">
-      <span>React</span>
-      <span>TypeScript</span>
-      <span>Cypress</span>
-      <span>GitHub Actions</span>
-    </div>
+              <div className="tags">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Cypress</span>
+                <span>GitHub Actions</span>
+              </div>
 
-    <div className="project-links">
-      <a
-        className="button"
-        href="https://cycalona-villani.github.io/qa-test-dashboard/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Live Demo ↗
-      </a>
+              <div className="project-links">
+                <a
+                  className="button"
+                  href="https://cycalona-villani.github.io/qa-test-dashboard/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo ↗
+                </a>
 
-      <a
-        className="text-link"
-        href="https://github.com/Cycalona-villani/qa-test-dashboard"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View GitHub →
-      </a>
-    </div>
-  </div>
+                <a
+                  className="text-link"
+                  href="https://github.com/Cycalona-villani/qa-test-dashboard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View GitHub →
+                </a>
+              </div>
+            </div>
 
-  <aside
-    className="project-proof"
-    aria-label="QA dashboard automated test results"
-  >
-    <span className="proof-label">
-      TESTED WORKFLOWS
-    </span>
+            <aside
+              className="project-proof"
+              aria-label="QA dashboard automated test results"
+            >
+              <span className="proof-label">
+                TESTED WORKFLOWS
+              </span>
 
-    <strong>
-      03<span> / 03</span>
-    </strong>
+              <strong>
+                03<span> / 03</span>
+              </strong>
 
-    <p>Cypress tests passing</p>
+              <p>Cypress tests passing</p>
 
-    <ul>
-      <li>✓ Test creation and persistence</li>
-      <li>✓ Defect linking and closure</li>
-      <li>✓ Test results and dashboard counts</li>
-    </ul>
+              <ul>
+                <li>✓ Test creation and persistence</li>
+                <li>✓ Defect linking and closure</li>
+                <li>✓ Test results and dashboard counts</li>
+              </ul>
 
-    <small>
-      GitHub Actions runs tests before deployment.
-      Demo data is saved in your browser.
-    </small>
+              <small>
+                GitHub Actions runs tests before deployment.
+                Demo data is saved in your browser.
+              </small>
 
-    <div style={{ marginTop: '16px' }}>
-      <a
-        className="test-evidence-link"
-        href="https://github.com/Cycalona-villani/qa-test-dashboard/actions"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        View Automated Test Runs ↗
-      </a>
-    </div>
-  </aside>
-</article>
+              <div style={{ marginTop: '16px' }}>
+                <a
+                  className="test-evidence-link"
+                  href="https://github.com/Cycalona-villani/qa-test-dashboard/actions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Automated Test Runs ↗
+                </a>
+              </div>
+            </aside>
+          </article>
         </section>
-<section className="section">
-  <p className="eyebrow">PORTFOLIO QUALITY CHECKS</p>
-  <h2>This portfolio is tested, too.</h2>
+        <section className="section">
+          <p className="eyebrow">PORTFOLIO QUALITY CHECKS</p>
+          <h2>This portfolio is tested, too.</h2>
 
-  <p>
-    Four Cypress tests cover the homepage, project navigation,
-    project links, and the contact link at a phone-sized viewport.
-    Jenkins builds the portfolio, runs the tests, and publishes
-    JUnit reports.
-  </p>
+          <p>
+            Four Cypress tests cover the homepage, project navigation,
+            project links, and the contact link at a phone-sized viewport.
+            Jenkins builds the portfolio, runs the tests, and publishes
+            JUnit reports.
+          </p>
 
-  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
-    <a
-      className="text-link"
-      href={`${import.meta.env.BASE_URL}images/portfolio-cypress-tests.png`}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      View Portfolio Cypress Results ↗
-    </a>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
+            <a
+              className="text-link"
+              href={`${import.meta.env.BASE_URL}images/portfolio-cypress-tests.png`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Portfolio Cypress Results ↗
+            </a>
 
-    <a
-      className="text-link"
-      href={`${import.meta.env.BASE_URL}images/portfolio-jenkins-tests.png`}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      View Portfolio Jenkins Results ↗
-    </a>
-  </div>
-</section>
+            <a
+              className="text-link"
+              href={`${import.meta.env.BASE_URL}images/portfolio-jenkins-tests.png`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Portfolio Jenkins Results ↗
+            </a>
+          </div>
+        </section>
         {/* ABOUT SECTION */}
         <section id="about" className="section about-section">
           <div>
@@ -354,25 +355,25 @@ function App() {
             ))}
           </ul>
         </section>
-      {/* RESUME SECTION */}
-      <section id="resume" className="section">
-        <p className="eyebrow">MY EXPERIENCE</p>
-        <h2>View my résumé.</h2>
+        {/* RESUME SECTION */}
+        <section id="resume" className="section">
+          <p className="eyebrow">MY EXPERIENCE</p>
+          <h2>View my résumé.</h2>
 
-        <p>
-          Explore my experience in software development,
-          testing, and technical delivery.
-        </p>
+          <p>
+            Explore my experience in software development,
+            testing, and technical delivery.
+          </p>
 
-        <a
-          className="button"
-          href={`${import.meta.env.BASE_URL}resume/Cycalona_Villani_Resume.pdf`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Résumé ↗
-        </a>
-</section>
+          <a
+            className="button"
+            href={`${import.meta.env.BASE_URL}resume/Cycalona_Villani_Resume.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Résumé ↗
+          </a>
+        </section>
         {/* CONTACT SECTION */}
         <section id="contact" className="contact-section">
           <p className="eyebrow">LET’S CONNECT</p>
