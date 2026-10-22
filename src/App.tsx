@@ -170,7 +170,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Cypress Test Results ↗
+                  View Earlier Cypress Test Results ↗
                 </a>
 
                 <a
@@ -179,7 +179,7 @@ function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Jenkins Test Results ↗
+                  View Earlier Jenkins Test Results ↗
                 </a>
               </div>
             </aside>
